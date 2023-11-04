@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./output.css" />
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body class="bg-Offwhite flex items-center justify-center h-screen w-screen font-Poppins">
+  <!-- app -->
+  <div
+    class=" bg-NeutralWhite rounded-xl  rounded-br-[25%] shadow-2xl border-2 border-NeutralWhite h-[60%] w-[50%] p-8">
+    <!-- main card -->
+    <main class="flex flex-col items-start justify-center gap-8">
+      <!-- day month year -->
+      <section class="flex items-start justify-start gap-4  p-2">
+        <div class="flex flex-col items-start justify-between space-y-3 ">
+          <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">Day</label>
+          <input type="number" value="01" min="1" max="31" id="day"
+            class="text-2xl text-OffBlack  text-start items-start  align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
+        </div>
+        <div class="flex flex-col items-start justify-between space-y-3">
+          <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">month</label>
+          <input type="number" value="01" min="1" max="12" id="month"
+            class="text-2xl text-OffBlack  text-start items-start  align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
+        </div>
+        <div class="flex flex-col items-start justify-between space-y-3">
+          <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">year</label>
+          <input type="number" value="2000" min="1900" id="year"
+            class="text-2xl text-OffBlack items-start  text-start align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
+        </div>
+      </section>
+      <!-- devider -->
+      <section class="w-full h-full flex items-center justify-start">
+        <hr class="border border-Lightgrey w-[80%] ml-6"/>
+        <div class="flex items-start bg-PrimaryPurple hover:bg-Smokeygrey rounded-full p-4 ml-2 mr-6" id="result">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div>
+       
+      </section>
+      <!-- result -->
+      <section class="flex flex-col items-start justify-center">
+        <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="years-res">- -</span><h1>years</h1></div>
+        <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="month-res">- -</span><h1>months</h1></div>
+        <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="days-res">- -</span><h1>days</h1></div>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -11,27 +11,29 @@
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 
-<body class="bg-Offwhite flex items-center justify-center h-screen w-screen font-Poppins">
+<body class="bg-Offwhite flex  flex-col items-center justify-center h-screen w-screen font-Poppins">
+
+  <span class="p-8 text-5xl font-Poppins font-extrabold tracking-wider text-PrimaryPurple uppercase animate-pulse" >1 better per day</span>
   <!-- app -->
   <div
-    class=" bg-NeutralWhite rounded-xl  rounded-br-[25%] shadow-2xl border-2 border-NeutralWhite h-[60%] w-[50%] p-8">
+    class=" bg-NeutralWhite rounded-xl  rounded-br-[25%] shadow-2xl border-2 border-NeutralWhite  md:h-[60%] md:w-[40%] p-8">
     <!-- main card -->
     <main class="flex flex-col items-start justify-center gap-8">
       <!-- day month year -->
       <section class="flex items-start justify-start gap-4  p-2">
         <div class="flex flex-col items-start justify-between space-y-3 ">
           <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">Day</label>
-          <input type="number" value="01" min="1" max="31" id="day"
+          <input type="number" placeholder="D D"  min="1" max="31" id="day"
             class="text-2xl text-OffBlack  text-start items-start  align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
         </div>
         <div class="flex flex-col items-start justify-between space-y-3">
           <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">month</label>
-          <input type="number" value="01" min="1" max="12" id="month"
+          <input type="number" placeholder="M M"  min="1" max="12" id="month"
             class="text-2xl text-OffBlack  text-start items-start  align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
         </div>
         <div class="flex flex-col items-start justify-between space-y-3">
           <label class="text-sm font-Poppins font-bold uppercase text-Smokeygrey tracking-widest">year</label>
-          <input type="number" value="2000" min="1900" id="year"
+          <input type="number" placeholder="Y Y" min="1900" id="year"
             class="text-2xl text-OffBlack items-start  text-start align-baseline font-extrabold font-Poppins border-2 border-Lightgrey  rounded p-2 w-32 ml-4" />
         </div>
       </section>
@@ -47,7 +49,7 @@
       <!-- result -->
       <section class="flex flex-col items-start justify-center">
         <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="years-res">- -</span><h1>years</h1></div>
-        <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="month-res">- -</span><h1>months</h1></div>
+        <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="months-res">- -</span><h1>months</h1></div>
         <div class="text-8xl font-Poppins font-extrabold flex items-start justify-start gap-4"><span class="text-PrimaryPurple " id="days-res">- -</span><h1>days</h1></div>
       </section>
     </main>
